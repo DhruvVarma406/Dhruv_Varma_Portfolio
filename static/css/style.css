@@ -1,0 +1,990 @@
+body{
+    background:#0f172a;
+    color:white;
+    font-family:'Poppins',sans-serif;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:70px;
+}
+.hero p{
+    color:#cbd5e1;
+}
+.hero-img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #2563eb;
+    box-shadow: 0 0 30px rgba(37,99,235,0.5);
+}
+
+.btn-primary{
+    padding:12px 30px;
+    border-radius:30px;
+}
+
+.btn-outline-light{
+    padding:12px 30px;
+    border-radius:30px;
+}
+
+.hero h1{
+    font-size:70px;
+    font-weight:700;
+}
+
+.hero h2{
+    color:#3b82f6;
+    font-weight:600;
+}
+.hero-img{
+    animation: float 4s ease-in-out infinite;
+}
+.typing-text{
+    font-size:42px;
+    font-weight:700;
+    color:#2563eb;
+    min-height:60px;
+}
+.social-icons{
+    display:flex;
+    gap:20px;
+}
+
+.social-icons a{
+    width:55px;
+    height:55px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border:2px solid #2563eb;
+    border-radius:50%;
+
+    color:#2563eb;
+    text-decoration:none;
+
+    font-size:22px;
+
+    transition:.4s;
+}
+
+.social-icons a:hover{
+
+    background:#2563eb;
+    color:white;
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 20px #2563eb;
+
+}
+html{
+    scroll-behavior:smooth;
+}
+.nav-link{
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#2563eb !important;
+
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.about-section {
+    padding: 100px 0;
+    background: #0b1224;
+}
+
+
+/* Section Heading */
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section-subtitle {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.section-title h2 span {
+    color: #2563eb;
+}
+
+.title-line {
+    width: 60px;
+    height: 4px;
+    background: #2563eb;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+
+/* About Content */
+
+.about-section h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+
+/* Technology Tags */
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tech-tags span {
+    padding: 8px 18px;
+    border: 1px solid #2563eb;
+    border-radius: 25px;
+    color: #60a5fa;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.tech-tags span:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+/* Journey Card */
+
+.journey-card {
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.journey-card h3 {
+    margin-bottom: 30px;
+}
+
+
+/* Journey Items */
+
+.journey-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.journey-item:last-child {
+    border-bottom: none;
+}
+
+.journey-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(37, 99, 235, 0.15);
+    color: #3b82f6;
+
+    font-size: 20px;
+}
+
+.journey-item h5 {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.journey-item p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Technology Tags */
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tech-tags span {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid #2563eb;
+    border-radius: 25px;
+    color: #60a5fa;
+    background: rgba(37, 99, 235, 0.08);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.tech-tags span:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-3px);
+} 
+
+/* ================= SKILLS SECTION ================= */
+
+.skills-section {
+    padding: 100px 0;
+    background: #0f172a;
+}
+
+
+/* Skill Card */
+
+.skill-card {
+    height: 100%;
+    padding: 35px 30px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: all 0.4s ease;
+}
+
+
+/* Icon */
+
+.skill-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(37, 99, 235, 0.15);
+
+    color: #3b82f6;
+
+    font-size: 32px;
+
+    transition: all 0.4s ease;
+}
+
+
+/* Title */
+
+.skill-card h4 {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+
+/* Description */
+
+.skill-card p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+
+/* Hover */
+
+.skill-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #2563eb;
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.15);
+}
+
+
+
+.skill-card:hover .skill-icon {
+    background: #2563eb;
+    color: white;
+
+    transform: scale(1.1);
+}
+
+/* ================= PROJECTS SECTION ================= */
+
+.projects-section {
+    padding: 100px 0;
+    background: #0b1224;
+}
+
+
+/* Project Card */
+
+.project-card {
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: all 0.4s ease;
+}
+
+
+/* Project Image */
+
+.project-image {
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #111c35,
+        #172554
+    );
+}
+
+
+/* Placeholder Icon */
+
+.project-placeholder {
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background: rgba(37, 99, 235, 0.15);
+
+    color: #3b82f6;
+
+    font-size: 40px;
+}
+
+
+/* Project Content */
+
+.project-content {
+    padding: 30px;
+}
+
+
+.project-content h3 {
+    color: white;
+
+    font-size: 24px;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+
+.project-content p {
+    color: #94a3b8;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    min-height: 95px;
+}
+
+
+/* Technology */
+
+.project-tech {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin: 20px 0;
+}
+
+
+.project-tech span {
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: rgba(37, 99, 235, 0.1);
+
+    border: 1px solid rgba(37, 99, 235, 0.5);
+
+    color: #60a5fa;
+
+    font-size: 12px;
+}
+
+
+/* Buttons */
+
+.project-buttons {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.project-btn {
+    flex: 1;
+
+    padding: 10px;
+
+    border: 1px solid #2563eb;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    color: #60a5fa;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: all 0.3s ease;
+}
+
+
+.project-btn:hover {
+    background: #2563eb;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* Card Hover */
+
+.project-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #2563eb;
+
+    box-shadow: 0 20px 50px rgba(37, 99, 235, 0.15);
+}
+
+
+.project-card:hover .project-placeholder {
+    transform: scale(1.1);
+
+    background: #2563eb;
+
+    color: white;
+}
+
+
+.project-img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background: #111c35;
+    display: block;
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.05);
+}
+
+/* ================= PROJECT STATUS ================= */
+
+.project-status {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    background: rgba(37, 99, 235, 0.12);
+
+    border: 1px solid rgba(37, 99, 235, 0.4);
+
+    color: #60a5fa;
+
+    font-size: 12px;
+
+    font-weight: 500;
+}
+/* ================= SUCCESS PAGE ================= */
+
+.success-section {
+    min-height: calc(100vh - 76px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px 30px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(37, 99, 235, 0.12),
+            transparent 45%
+        ),
+        #0b1224;
+}
+
+
+/* Make the success page use more horizontal space */
+
+.success-section > .container {
+    max-width: 1500px;
+    width: 100%;
+}
+
+
+/* Success Card */
+
+.success-card {
+    width: 100%;
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    padding: 80px 100px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(12px);
+
+    animation: successCard 0.7s ease;
+}
+
+
+/* Success Icon */
+
+.success-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(37, 99, 235, 0.15);
+
+    border: 2px solid #2563eb;
+
+    color: #3b82f6;
+
+    font-size: 38px;
+
+    animation: successIcon 0.8s ease;
+}
+
+
+/* Subtitle */
+
+.success-subtitle {
+    color: #60a5fa !important;
+
+    font-size: 13px !important;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Heading */
+
+.success-card h1 {
+    color: white;
+
+    font-size: 48px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+/* Main Message */
+
+.success-message {
+    color: #e2e8f0 !important;
+
+    font-size: 20px !important;
+
+    margin-bottom: 10px;
+}
+
+
+/* Description */
+
+.success-description {
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    color: #94a3b8 !important;
+
+    font-size: 15px !important;
+
+    line-height: 1.8;
+}
+
+
+/* Buttons */
+
+.success-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+
+/* Button Hover */
+
+.success-buttons .btn {
+    transition: all 0.3s ease;
+}
+
+.success-buttons .btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Animations */
+
+@keyframes successCard {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes successIcon {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    70% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+    .success-section {
+        padding: 40px 15px;
+    }
+
+    .success-section > .container {
+        padding: 0;
+    }
+
+    .success-card {
+        max-width: 100%;
+        padding: 45px 25px;
+    }
+
+    .success-card h1 {
+        font-size: 38px;
+    }
+
+    .success-message {
+        font-size: 17px !important;
+    }
+
+    .success-buttons {
+        flex-direction: column;
+    }
+
+    .success-buttons .btn {
+        width: 100%;
+    }
+
+}
+
+/* ================= FOOTER ================= */
+
+.footer-section {
+    padding: 60px 0 25px;
+
+    background: #080d1a;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* Footer Logo */
+
+.footer-logo {
+    color: white;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.footer-logo span {
+    color: #2563eb;
+}
+
+
+.footer-role {
+    margin-top: 8px;
+
+    margin-bottom: 5px;
+
+    color: #60a5fa;
+
+    font-size: 16px;
+
+    font-weight: 500;
+}
+
+
+.footer-description {
+    color: #64748b;
+
+    font-size: 14px;
+
+    margin: 0;
+}
+
+
+/* Social Links */
+
+.footer-socials {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 15px;
+}
+
+
+.footer-socials a {
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(37, 99, 235, 0.6);
+
+    border-radius: 50%;
+
+    color: #60a5fa;
+
+    text-decoration: none;
+
+    font-size: 19px;
+
+    transition: all 0.3s ease;
+}
+
+
+.footer-socials a:hover {
+    background: #2563eb;
+
+    color: white;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+
+/* Divider */
+
+.footer-divider {
+    height: 1px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    margin: 40px 0 25px;
+}
+
+
+/* Bottom */
+
+.footer-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.footer-bottom p {
+    color: #64748b;
+
+    font-size: 13px;
+
+    margin: 0;
+}
+
+
+/* Back To Top */
+
+.back-to-top {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #60a5fa;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: all 0.3s ease;
+}
+
+
+.back-to-top:hover {
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* ================= FOOTER MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .footer-section {
+        padding: 50px 0 20px;
+    }
+
+
+    .footer-socials {
+        justify-content: center;
+
+        margin-top: 30px;
+    }
+
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+    }
+
+}
