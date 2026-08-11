@@ -1,3 +1,4 @@
+import os
 import gspread
 from google.oauth2.service_account import Credentials
 
@@ -8,8 +9,26 @@ SCOPES = [
 ]
 
 
+# Local development path
+local_credentials = os.path.join(
+    "credentials",
+    "dhruv-portfolio-505117-6d928fda43c8.json"
+)
+
+# Render Secret File path
+render_credentials = "/etc/secrets/dhruv-portfolio-505117-6d928fda43c8.json"
+
+
+# Use Render credentials when deployed,
+# otherwise use the local credentials file
+if os.path.exists(render_credentials):
+    credentials_path = render_credentials
+else:
+    credentials_path = local_credentials
+
+
 credentials = Credentials.from_service_account_file(
-    "credentials/dhruv-portfolio-505117-6d928fda43c8.json",
+    credentials_path,
     scopes=SCOPES
 )
 
