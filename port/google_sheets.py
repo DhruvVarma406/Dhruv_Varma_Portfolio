@@ -1,4 +1,5 @@
 import os
+import json
 import gspread
 from google.oauth2.service_account import Credentials
 
@@ -9,28 +10,31 @@ SCOPES = [
 ]
 
 
-# Local development path
+# Local development
 local_credentials = os.path.join(
     "credentials",
     "dhruv-portfolio-505117-6d928fda43c8.json"
 )
 
-# Render Secret File path
-render_credentials = "/etc/secrets/dhruv-portfolio-505117-6d928fda43c8.json"
+
+# Use Vercel environment variable when deployed
+google_credentials_json = os.getenv("GOOGLE_CREDENTIALS")
 
 
-# Use Render credentials when deployed,
-# otherwise use the local credentials file
-if os.path.exists(render_credentials):
-    credentials_path = render_credentials
+if google_credentials_json:
+    credentials_info = json.loads(google_credentials_json)
+
+    credentials = Credentials.from_service_account_info(
+        credentials_info,
+        scopes=SCOPES
+    )
+
 else:
-    credentials_path = local_credentials
+    credentials = Credentials.from_service_account_file(
+        local_credentials,
+        scopes=SCOPES
+    )
 
-
-credentials = Credentials.from_service_account_file(
-    credentials_path,
-    scopes=SCOPES
-)
 
 client = gspread.authorize(credentials)
 
