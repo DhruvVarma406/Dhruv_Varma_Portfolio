@@ -30,15 +30,14 @@ DEBUG =True
 ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost",
+    ".vercel.app",
 ]
-
 if os.getenv("RENDER_EXTERNAL_HOSTNAME"):
     ALLOWED_HOSTS.append(os.getenv("RENDER_EXTERNAL_HOSTNAME"))
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://dhruv-varma-portfolio.onrender.com",
+    "https://dhruv-varma-portfolio-kfxc.vercel.app",
 ]
-
 # Application definition
 
 INSTALLED_APPS = [
